@@ -124,7 +124,8 @@ $(document).ready(function(){
     $(this).fadeOut();
     $("body").css("overflow-y", "auto");
   })
-  //0~800px 넓이에서 
+  
+  //0~800px 넓이에서 프로그래밍 시작
 
   if($(window).width() <= 800) {
 
@@ -139,6 +140,12 @@ $(document).ready(function(){
         $("#top button").text("menu");
         $("#menu").animate({left:"-100vw"},100);
       }
+   });
+
+    
+   $("#menu a").click(function(){
+      $("#menu").animate({left:"-100vw"},100);
+      $("#top button").text("menu");
    });
 
     $(window).scroll(function(){
