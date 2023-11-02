@@ -613,5 +613,8 @@ color:white;
     order:1;
   }
 
+  #popup img {
+    width:95%;
+  }
 
 }
